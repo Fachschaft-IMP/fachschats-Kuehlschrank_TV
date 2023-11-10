@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        @keyframes tentacle {
+            0% {border-color: white;}
+            50% {border-color: gray;}
+            100% {border-color: white;}
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('test2.gif');
+            background-size: cover;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 80%;
+            gap: 2em;
+            border: 5px solid white;
+            padding: 1em;
+            animation: tentacle 2s infinite;
+            background-color: black;
+        }
+        .menu-item {
+            flex: 0 0 45%;
+            margin-bottom: 2em;
+        }
+        h1 {
+            font-size: 5em;
+            width: 100%;
+            text-align: center;
+        }
+        h2 {
+            font-size: 2.5em;
+        }
+        .news {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Menu</h1>
+    <div class="menu">
+        <div class="menu-item">
+            <h2>The "Big Boy" Burger - \\$16.99</h2>
+            <h2>French Fries - \\$5.99</h2>
+            <h2>Curry Sauce - \\$19.99</h2>
+            <h2>Napkins with Chocolates - \\$10.50</h2>
+        </div>
+        <div class="menu-item">
+            <h2>Juice Box - \\$89.01</h2>
+            <h2>Takeout - \\$18.99</h2>
+            <!-- Add more items here -->
+        </div>
+    </div>
+
+    <h1 class="news">News</h1>
+    <p class="news">News article 1</p>
+    <p class="news">News article 2</p>
+    <p class="news">News article 3</p>
+</body>
+</html>
